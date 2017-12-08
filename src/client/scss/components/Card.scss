@@ -1,0 +1,93 @@
+.o-slinker-card {
+  border: 2px solid #f00;
+  border-radius: 5px;
+  height: 7.5rem;
+  width: 7.5rem;
+  padding: 1px;
+  margin: 0.4rem 0.6rem 0.4rem 0;
+  box-shadow: 1px 1px 0px 0px rgba(94,93,102,0.08),
+              2px 2px 3px 0px rgba(94,93,102,0.1);
+
+  &--collapsed {
+    border: 2px solid #222;
+    background-color: #eee;
+    border-radius: 5px;
+    height: auto;
+    width: 7.5rem;
+    padding: 1px;
+  }
+}
+
+.o-slinker-cardheader {
+  position: relative;
+  background-color: #248383;
+  display: block;
+  padding: 5px;
+  border-radius: 5px;
+
+  &> span.o-title {
+    width: 90%;
+    height: 100%;
+  }
+
+  &> span.o-icon {
+    position: absolute;
+    display: inline-block;
+    right: -0.7rem;
+    top: -0.5rem;
+    width: 1.0rem;
+    height: 1.0rem;
+    background-repeat: no-repeat;
+    padding: -15px;
+
+    &__delete {
+      & .cls-1 {
+        fill: #444444;
+      }
+
+      & .cls-2 {
+        fill: #ca2f2f;
+      }
+
+      &:hover {
+        & .cls-1 {
+          fill: #ca2f2f;
+        }
+
+        & .cls-2 {
+          fill: #fff;
+        }
+
+      }
+    }
+
+    &__edit {
+      top: 0.75rem;
+
+      & .cls-1 {
+        fill: #444444;
+      }
+
+      & .cls-2 {
+        fill: #66b363;
+      }
+
+      &:hover {
+
+        & .cls-1 {
+          fill: #66b363;
+        }
+
+        & .cls-2 {
+          fill: #fff;
+        }
+
+      }
+    }
+
+  }
+
+}
+
+
+
